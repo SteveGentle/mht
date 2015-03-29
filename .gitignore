@@ -1,1 +1,2 @@
 talk/cache/*.ini
+talk/cache/Smarty/**/*.php
