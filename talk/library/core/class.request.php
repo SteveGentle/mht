@@ -834,6 +834,10 @@ class Gdn_Request {
       $Host = $this->Host();
       if (!in_array($Port, array(80, 443)))
          $Host .= ':'.$Port;
+      // added from https://github.com/duellsy/Garden/commit/e7ed5177049c109c4807960fed603c8b64bc7864 based on 
+      // http://vanillaforums.org/discussion/comment/209494#Comment_209494
+      if (strpos($Host, $Port.':'.$Port) > 0)
+         $Host = $this->Host();
 
       if ($WithDomain === '//') {
          $Parts[] = '//'.$Host;
