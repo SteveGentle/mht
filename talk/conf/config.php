@@ -8,6 +8,7 @@ $Configuration['Database']['Name'] = 'mht5_vf219';
 $Configuration['Database']['Host'] = 'localhost';
 $Configuration['Database']['User'] = 'root';
 $Configuration['Database']['Password'] = 'root';
+//$Configuration['Debug'] = TRUE;
 
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';
@@ -31,6 +32,7 @@ $Configuration['Garden']['Cdns']['Disable'] = FALSE;
 $Configuration['Garden']['CanProcessImages'] = TRUE;
 $Configuration['Garden']['SystemUserID'] = '2';
 $Configuration['Garden']['Installed'] = TRUE;
+$Configuration['Garden']['Theme'] = 'bittersweet';
 
 // Plugins
 $Configuration['Plugins']['GettingStarted']['Dashboard'] = '1';
@@ -41,6 +43,4 @@ $Configuration['Routes']['DefaultController'] = 'discussions';
 // Vanilla
 $Configuration['Vanilla']['Version'] = '2.1.9';
 
-// Last edited by Steve (127.0.0.1)2015-03-29 23:39:36
-
-//$Configuration ['Debug'] = TRUE;
+// Last edited by Steve (127.0.0.1)2015-03-29 23:57:10
