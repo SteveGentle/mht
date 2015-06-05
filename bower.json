@@ -1,0 +1,30 @@
+{
+  "name": "MiamiHawkTalk",
+  "version": "0.1.0",
+  "authors": [
+    "Steve Gentle <steve@miamihawktalk.com>"
+  ],
+  "description": "libraries used by miamihawktalk.com",
+  "main": "index.html",
+  "analytics": false,
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "license": "mht",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "3.3.3",
+    "fontawesome": "~4.3.0",
+    "modernizr": "~2.8.3",
+    "susy": "~2.2.2"
+  }
+}
