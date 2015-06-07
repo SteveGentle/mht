@@ -12,10 +12,15 @@ $Configuration['Database']['Password'] = 'root';
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';
+$Configuration['EnabledApplications']['Yaga'] = 'yaga';
 
 // EnabledPlugins
 $Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 $Configuration['EnabledPlugins']['HtmLawed'] = 'HtmLawed';
+$Configuration['EnabledPlugins']['Tagging'] = TRUE;
+$Configuration['EnabledPlugins']['Flagging'] = TRUE;
+$Configuration['EnabledPlugins']['cleditor'] = TRUE;
+$Configuration['EnabledPlugins']['Ignore'] = TRUE;
 
 // Garden
 $Configuration['Garden']['Title'] = 'Miami Hawk Talk';
@@ -23,6 +28,13 @@ $Configuration['Garden']['Cookie']['Salt'] = 'X6ZKXKRVHS';
 $Configuration['Garden']['Cookie']['Domain'] = '';
 $Configuration['Garden']['Registration']['ConfirmEmail'] = TRUE;
 $Configuration['Garden']['Email']['SupportName'] = 'Miami Hawk Talk';
+$Configuration['Garden']['Email']['SupportAddress'] = 'no-reply@miamihawktalk.com';
+$Configuration['Garden']['Email']['UseSmtp'] = FALSE;
+$Configuration['Garden']['Email']['SmtpHost'] = '';
+$Configuration['Garden']['Email']['SmtpUser'] = '';
+$Configuration['Garden']['Email']['SmtpPassword'] = '';
+$Configuration['Garden']['Email']['SmtpPort'] = '25';
+$Configuration['Garden']['Email']['SmtpSecurity'] = '';
 $Configuration['Garden']['InputFormatter'] = 'Html';
 $Configuration['Garden']['Html']['SafeStyles'] = TRUE;
 $Configuration['Garden']['Version'] = '2.1.9';
@@ -32,17 +44,37 @@ $Configuration['Garden']['CanProcessImages'] = TRUE;
 $Configuration['Garden']['SystemUserID'] = '2';
 $Configuration['Garden']['Installed'] = TRUE;
 $Configuration['Garden']['Theme'] = 'bootstrap';
+$Configuration['Garden']['HomepageTitle'] = 'Miami Hawk Talk';
+$Configuration['Garden']['Description'] = '';
+$Configuration['Garden']['Locale'] = 'en-CA';
+$Configuration['Garden']['GuestTimeZone'] = 'America/Detroit';
 $Configuration['Garden']['ThemeOptions']['Name'] = 'Bootstrap';
 $Configuration['Garden']['ThemeOptions']['Styles']['Key'] = 'Simplex';
 $Configuration['Garden']['ThemeOptions']['Styles']['Value'] = '%s_simplex';
 
 // Plugins
 $Configuration['Plugins']['GettingStarted']['Dashboard'] = '1';
+$Configuration['Plugins']['GettingStarted']['Categories'] = '1';
+$Configuration['Plugins']['GettingStarted']['Plugins'] = '1';
+$Configuration['Plugins']['GettingStarted']['Discussion'] = '1';
+$Configuration['Plugins']['GettingStarted']['Profile'] = '1';
+$Configuration['Plugins']['Flagging']['UseDiscussions'] = FALSE;
+$Configuration['Plugins']['Flagging']['CategoryID'] = '27';
 
 // Routes
-$Configuration['Routes']['DefaultController'] = 'discussions';
+$Configuration['Routes']['DefaultController'] = array('discussions', 'Internal');
 
 // Vanilla
 $Configuration['Vanilla']['Version'] = '2.1.9';
+$Configuration['Vanilla']['Categories']['Use'] = TRUE;
+$Configuration['Vanilla']['Categories']['MaxDisplayDepth'] = '3';
+$Configuration['Vanilla']['Categories']['DoHeadings'] = '1';
+$Configuration['Vanilla']['Categories']['HideModule'] = '1';
+$Configuration['Vanilla']['Categories']['Layout'] = 'modern';
+$Configuration['Vanilla']['Discussions']['Layout'] = 'modern';
+$Configuration['Vanilla']['AdminCheckboxes']['Use'] = TRUE;
 
-// Last edited by Steve (127.0.0.1)2015-06-03 01:58:27
+// Yaga
+$Configuration['Yaga']['Version'] = '1.0.3';
+
+// Last edited by Steve (127.0.0.1)2015-06-07 04:14:45
