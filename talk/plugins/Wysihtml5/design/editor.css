@@ -139,3 +139,10 @@
   background: rgba(0, 0, 0, 0.05);
   border-left: 4px solid rgba(0, 0, 0, 0.1);
 }
+
+.wysihtml5-supported .editor-toolbar {
+  margin-bottom: 8px;
+}
+.wysihtml5-supported .editor-toolbar .Button span {
+  display: none;
+}

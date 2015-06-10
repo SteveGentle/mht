@@ -38,6 +38,7 @@ class Wysihtml5Plugin extends Gdn_Plugin
 
         // Add the assets we need for the editor
         Gdn::controller()->addCssFile($this->getResource('design/editor.css', false, false));
+        Gdn::controller()->addCssFile('resources/design/vanillicon.css');
         Gdn::controller()->addJsFile($this->getResource('js/editor.min.js', false, false));
 
         // Render the formatting toolbar
