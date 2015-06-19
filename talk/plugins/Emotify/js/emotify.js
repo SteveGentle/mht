@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
          // no duplicates
          if (last != emoticons[e]) {
             last = emoticons[e];
-            buts += '<a class="EmoticonBox Emoticon Emoticon'+emoticons[e]+'"><span>'+e+'</span></a>';
+            buts += '<a class="EmoticonBox Emoticon Emoticon'+emoticons[e]+'" title="'+emoticons[e]+'"><span>'+e+'</span></a>';
          }
       }
       textbox.before("<div class=\"EmotifyWrapper\">\

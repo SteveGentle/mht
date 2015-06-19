@@ -1,0 +1,125 @@
+.EmotifyDropdown span,
+.Emoticon span { display: none; }
+.EmotifyDropdown,
+.Emoticon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+}
+
+.EmoticonAngel { background-image: url('simple/Angel.png'); }
+.EmoticonAngry { background-image: url('simple/Angry.png'); }
+.EmoticonAww_2 { background-image: url('simple/Aww_2.png'); }
+.EmoticonAww { background-image: url('simple/Aww.png'); }
+.EmoticonBlushing { background-image: url('simple/Blushing.png'); }
+.EmoticonChildish { background-image: url('simple/Childish.png'); }
+.EmoticonConfused { background-image: url('simple/Confused.png'); }
+.EmoticonCreepy { background-image: url('simple/Creepy.png'); }
+.EmoticonCrying { background-image: url('simple/Crying.png'); }
+.EmoticonCthulhu { background-image: url('simple/Cthulhu.png'); }
+.EmoticonCute_Winking { background-image: url('simple/Cute_Winking.png'); }
+.EmoticonCute { background-image: url('simple/Cute.png'); }
+.EmoticonDevil { background-image: url('simple/Devil.png'); }
+.EmoticonGah_2 { background-image: url('simple/Gah_2.png'); }
+.EmoticonGah { background-image: url('simple/Gah.png'); }
+.EmoticonGasping { background-image: url('simple/Gasping.png'); }
+.EmoticonGreedy { background-image: url('simple/Greedy.png'); }
+.EmoticonGrinning_Winking { background-image: url('simple/Grinning_Winking.png'); }
+.EmoticonGrinning { background-image: url('simple/Grinning.png'); }
+.EmoticonHappy_2 { background-image: url('simple/Happy_2.png'); }
+.EmoticonHappy_3 { background-image: url('simple/Happy_3.png'); }
+.EmoticonHappy { background-image: url('simple/Happy.png'); }
+.EmoticonHeart { background-image: url('simple/Heart.png'); }
+.EmoticonHuh_2 { background-image: url('simple/Huh_2.png'); }
+.EmoticonHuh { background-image: url('simple/Huh.png'); }
+.EmoticonLaughing { background-image: url('simple/Laughing.png'); }
+.EmoticonLips_Sealed { background-image: url('simple/Lips_Sealed.png'); }
+.EmoticonMadness { background-image: url('simple/Madness.png'); }
+.EmoticonMalicious { background-image: url('simple/Malicious.png'); }
+.EmoticonSick { background-image: url('simple/Sick.png'); }
+.EmoticonSmiling { background-image: url('simple/Smiling.png'); }
+.EmoticonSpeechless { background-image: url('simple/Speechless.png'); }
+.EmoticonSpiteful { background-image: url('simple/Spiteful.png'); }
+.EmoticonStupid { background-image: url('simple/Stupid.png'); }
+.EmoticonSunglasses { background-image: url('simple/Sunglasses.png'); }
+.EmoticonTerrified { background-image: url('simple/Terrified.png'); }
+.EmoticonThumb_Down { background-image: url('simple/Thumb_Down.png'); }
+.EmoticonThumb_Up { background-image: url('simple/Thumb_Up.png'); }
+.EmoticonTired { background-image: url('simple/Tired.png'); }
+.EmoticonTongue_Out_Laughing { background-image: url('simple/Tongue_Out_Laughing.png'); }
+.EmoticonTongue_Out_Left { background-image: url('simple/Tongue_Out_Left.png'); }
+.EmoticonTongue_Out_Up_Left { background-image: url('simple/Tongue_Out_Up_Left.png'); }
+.EmoticonTongue_Out_Up { background-image: url('simple/Tongue_Out_Up.png'); }
+.EmoticonTongue_Out_Winking { background-image: url('simple/Tongue_Out_Winking.png'); }
+.EmoticonTongue_Out { background-image: url('simple/Tongue_Out.png'); }
+.EmoticonUncertain { background-image: url('simple/Uncertain.png'); }
+.EmoticonUncertain { background-image: url('simple/Uncertain.png'); }
+.EmoticonUnhappy { background-image: url('simple/Unhappy.png'); }
+.EmoticonWinking { background-image: url('simple/Winking.png'); }
+
+
+.EmotifyWrapper {
+    text-align: right;
+    position: relative;
+}
+.EmotifyDropdown {
+    display: block;
+    height: 23px;
+    width: 29px;
+    background: url('simple/arrow.png') 0 0 no-repeat;
+    position: absolute;
+    text-align: left;
+    top: 2px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.EmbedCommentForm .EmotifyDropdown {
+   top: -29px;
+}
+
+.EmotifyDropdownActive {
+    background-color: #eee;
+}
+.EmoticonContainer {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-right: 0;
+    width: 391px;
+    text-align: left;
+    float: right;
+    box-shadow: 2px 2px 4px #777;
+    -moz-box-shadow: 2px 2px 4px #777;
+    -webkit-box-shadow: 2px 2px 4px #777;
+    z-index: 1000;
+	 background: #eee;
+}
+.EmoticonBox {
+    background-color: #fff;
+    background-position: center center;
+    border: 1px solid #aaa;
+    border-top: 0;
+    border-left: 0;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.EmoticonBox:hover {
+   width: 42px;
+   height: 32px;
+   margin: -5px -10px;
+   z-index: 10;
+   border-radius: 2px;
+   box-shadow: 0 2px 7px #000;
+}

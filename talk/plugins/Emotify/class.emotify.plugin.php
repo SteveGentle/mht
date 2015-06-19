@@ -26,7 +26,8 @@ $PluginInfo['Emotify'] = array(
 class EmotifyPlugin implements Gdn_IPlugin {
    
    public function AssetModel_StyleCss_Handler($Sender) {
-      $Sender->AddCssFile('emotify.css', 'plugins/Emotify');
+//      $Sender->AddCssFile('emotify.css', 'plugins/Emotify');
+      $Sender->AddCssFile('simple.css', 'plugins/Emotify');
    }
 	
 	/**
@@ -50,6 +51,197 @@ class EmotifyPlugin implements Gdn_IPlugin {
 	 */
 	public static function GetEmoticons() {
 		return array(
+			':)' => 'Smiling',
+			':-)' => 'Smiling',
+			'=)' => 'Smiling',
+			':]' => 'Smiling',
+			':-]' => 'Smiling',
+			'(:' => 'Smiling',
+			':D' => 'Grinning',
+			':-D' => 'Grinning',
+			'=D' => 'Grinning',
+			';D' => 'Grinning_Winking',
+			';-D' => 'Grinning_Winking',
+			';)' => 'Winking',
+			';-)' => 'Winking',
+			';]' => 'Winking',
+			';-]' => 'Winking',
+			'(;' => 'Winking',
+			'B)' => 'Sunglasses',
+			'B-)' => 'Sunglasses',
+			'^^' => 'Happy',
+			'^_^' => 'Happy_2',
+			'^-^' => 'Happy_2',
+			'^__^' => 'Happy_2',
+			'^___^' => 'Happy_2',
+			'^.^' => 'Happy_3',
+			'^,^' => 'Happy_3',
+			':P' => 'Tongue_Out',
+			':p' => 'Tongue_Out',
+			'=P' => 'Tongue_Out',
+			'=p' => 'Tongue_Out',
+			':-P' => 'Tongue_Out',
+			':-p' => 'Tongue_Out',
+			'xP' => 'Tongue_Out_Laughing',
+			'Xp' => 'Tongue_Out_Laughing',
+			'x-P' => 'Tongue_Out_Laughing',
+			'X-p' => 'Tongue_Out_Laughing',
+			':b' => 'Tongue_Out_Left',
+			':-b' => 'Tongue_Out_Left',
+			':q' => 'Tongue_Out_Up',
+			':-q' => 'Tongue_Out_Up',
+			':d' => 'Tongue_Out_Up_Left',
+			':-d' => 'Tongue_Out_Up_Left',
+			';P' => 'Tongue_Out_Winking',
+			';p' => 'Tongue_Out_Winking',
+			';-P' => 'Tongue_Out_Winking',
+			';-p' => 'Tongue_Out_Winking',
+			':\'>' => 'Blushing',
+			'":"">"' => 'Blushing',
+			':(' => 'Unhappy',
+			':-(' => 'Unhappy',
+			'=(' => 'Unhappy',
+			':[' => 'Unhappy',
+			':-[' => 'Unhappy',
+			'):' => 'Unhappy',
+			':S' => 'Confused',
+			':s' => 'Confused',
+			':-S' => 'Confused',
+			':-s' => 'Confused',
+			'X(' => 'Angry',
+			':@' => 'Angry',
+			':-@' => 'Angry',
+			'):(' => 'Angry',
+			'O:)' => 'Angel',
+			'0:)' => 'Angel',
+			'O:-)' => 'Angel',
+			'0:-)' => 'Angel',
+			'o:)' => 'Angel',
+			'o:-)' => 'Angel',
+			'(A)' => 'Angel',
+			'\'w\'' => 'Aww',
+			'\'W\'' => 'Aww',
+			'*w*' => 'Aww',
+			'*W*' => 'Aww',
+			'°w°' => 'Aww',
+			'°W°' => 'Aww',
+			':}' => 'Aww',
+			':-}' => 'Aww',
+			'^w^' => 'Aww_2',
+			'^W^' => 'Aww_2',
+			':C' => 'Childish',
+			':c' => 'Childish',
+			':-C' => 'Childish',
+			':-c' => 'Childish',
+			':E' => 'Creepy',
+			':-E' => 'Creepy',
+			':\'(' => 'Crying',
+			':\'-(' => 'Crying',
+			'":""("' => 'Crying',
+			'":""-("' => 'Crying',
+			':*(' => 'Crying',
+			':*-(' => 'Crying',
+			':\'[' => 'Crying',
+			':\'C' => 'Crying',
+			'=\'(' => 'Crying',
+			':3' => 'Cute',
+			':-3' => 'Cute',
+			';3' => 'Cute_Winking',
+			';-3' => 'Cute_Winking',
+			'&gt;:)' => 'Devil',
+			'&gt;:-)' => 'Devil',
+			'(6)' => 'Devil',
+			'&gt;_&lt;' => 'Gah',
+			'&gt;&lt;' => 'Gah',
+			'&gt;__&lt;' => 'Gah',
+			'&gt;.&lt;' => 'Gah_2',
+			'&gt;,&lt;' => 'Gah_2',
+			':O' => 'Gasping',
+			':o' => 'Gasping',
+			':-O' => 'Gasping',
+			':-o' => 'Gasping',
+			':0' => 'Gasping',
+			':-0' => 'Gasping',
+			'=O' => 'Gasping',
+			'=o' => 'Gasping',
+			'$)' => 'Greedy',
+			'$-)' => 'Greedy',
+			'&lt;3' => 'Heart',
+			'(L)' => 'Heart',
+			'o.O' => 'Huh',
+			'o_O' => 'Huh',
+			'o,O' => 'Huh',
+			'o__O' => 'Huh',
+			'o.0' => 'Huh',
+			'o_0' => 'Huh',
+			'o,0' => 'Huh',
+			'o__0' => 'Huh',
+			'O.O' => 'Huh',
+			'O_O' => 'Huh',
+			'O,O' => 'Huh',
+			'O__O' => 'Huh',
+			'0.0' => 'Huh',
+			'0_0' => 'Huh',
+			'0,0' => 'Huh',
+			'0__0' => 'Huh',
+			'o.o' => 'Huh',
+			'o_o' => 'Huh',
+			'o,o' => 'Huh',
+			'o__o' => 'Huh',
+			'O.o' => 'Huh_2',
+			'O_o' => 'Huh_2',
+			'O,o' => 'Huh_2',
+			'O__o' => 'Huh_2',
+			'0.o' => 'Huh_2',
+			'0_o' => 'Huh_2',
+			'0,o' => 'Huh_2',
+			'0__o' => 'Huh_2',
+			'XD' => 'Laughing',
+			'xD' => 'Laughing',
+			'X-D' => 'Laughing',
+			'x-D' => 'Laughing',
+			':X' => 'Lips_Sealed',
+			':x' => 'Lips_Sealed',
+			':-X' => 'Lips_Sealed',
+			':-x' => 'Lips_Sealed',
+			'8D' => 'Madness',
+			'8-D' => 'Madness',
+			'):D' => 'Malicious',
+			'):-D' => 'Malicious',
+			']:D' => 'Malicious',
+			']:-D' => 'Malicious',
+			':&amp;' => 'Sick',
+			':-&amp;' => 'Sick',
+			':I' => 'Speechless',
+			':-I' => 'Speechless',
+			':|' => 'Speechless',
+			':-|' => 'Speechless',
+			':l' => 'Speechless',
+			':-l' => 'Speechless',
+			'):)' => 'Spiteful',
+			'):-)' => 'Spiteful',
+			']:)' => 'Spiteful',
+			']:-)' => 'Spiteful',
+			'8)' => 'Stupid',
+			'8-)' => 'Stupid',
+			'D:' => 'Terrified',
+			'D-:' => 'Terrified',
+			'-.-' => 'Tired',
+			'-_-' => 'Tired',
+			'-__-' => 'Tired',
+			'--__--' => 'Tired',
+			'-___-' => 'Tired',
+			'--___--' => 'Tired',
+			':/' => 'Uncertain',
+			':-/' => 'Uncertain',
+			':\\' => 'Uncertain',
+			':-\\' => 'Uncertain',
+			'8E' => 'Cthulhu',
+			'8-E' => 'Cthulhu',
+			'(Y)' => 'Thumb_Up',
+			'(N)' => 'Thumb_Down'
+
+/* original emoticons are as follows: 
 			':)]' => '100',
 			';))' => '71',
 			':)>-' => '67',
@@ -194,6 +386,7 @@ class EmotifyPlugin implements Gdn_IPlugin {
 			':bz' => '115',
 			':ar!' => 'pirate'
 //			'[..]' => 'transformer'
+*/
 		);
 	}
 	
@@ -212,13 +405,22 @@ class EmotifyPlugin implements Gdn_IPlugin {
 	}
    
    public function NBBCPlugin_AfterNBBCSetup_Handler($Sender, $Args) {
-//      $BBCode = new BBCode();
-      $BBCode = $Args['BBCode'];
-      $BBCode->smiley_url = SmartAsset('/plugins/Emotify/design/images');
+//		$BBCode = new BBCode();
+		$BBCode = $Args['BBCode'];
+
+//		original code:
+//		$BBCode->smiley_url = SmartAsset('/plugins/Emotify/design/images');
+
+//		new code:
+		$BBCode->smiley_url = SmartAsset('/plugins/Emotify/design/simple');
       
       $Smileys = array();
       foreach (self::GetEmoticons() as $Text => $Filename) {
-         $Smileys[$Text]= $Filename.'.gif';
+//		original code:
+//		$Smileys[$Text]= $Filename.'.gif';
+
+//		new code:
+		$Smileys[$Text]= $Filename.'.png';
       }
       
       $BBCode->smileys = $Smileys;
@@ -234,7 +436,10 @@ class EmotifyPlugin implements Gdn_IPlugin {
 			if (strpos($Text, $Key) !== FALSE)
 				$Text = preg_replace(
 					"#(?<=[>\s])".preg_quote($Key, '#')."(?=\W)#m",
-					'<span class="Emoticon Emoticon' . $Replacement . '"><span>' . $Key . '</span></span>',
+				//	old code:
+				//	'<span class="Emoticon Emoticon' . $Replacement . '"><span>' . $Key . '</span></span>',
+				//	new code - adds a title to the span to provide a tooltip above the emoticon
+					'<span class="Emoticon Emoticon' . $Replacement . '" title="' . $Replacement . '"><span>' . $Key . '</span></span>',
 					$Text
 				);
 		}
