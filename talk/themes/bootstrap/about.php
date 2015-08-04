@@ -22,6 +22,7 @@ $ThemeInfo['Bootstrap'] = array(
       'Flatly'    => '%s_flatly',
       'Journal'   => '%s_journal',
       'Lumen'     => '%s_lumen',
+      'MHT'       => '%s_mht',
       'Paper'     => '%s_paper',
       'Readable'  => '%s_readable',
       'Sandstone' => '%s_sandstone',

@@ -4,3 +4,6 @@ talk/cache/Smarty/**/*.php
 talk/uploads/**
 node_modules/**
 bower_components/**
+talk/themes/bootstrap/node_modules/**
+talk/themes/bootstrap/bower_components/**
+talk/themes/bootstrap/npm-debug.log
