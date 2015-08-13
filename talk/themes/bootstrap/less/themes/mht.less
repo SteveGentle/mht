@@ -8,4 +8,48 @@
 
 .TagCloud {
 	padding: 0;
+	li {
+		padding: 3px;
+	}
+}
+.InlineTags ul {
+	padding-left: 0;
+	margin-left: 0.5em;
+}
+
+.Button {
+  &,
+  &.Primary,
+  &.Danger {
+    &,
+    &:hover,
+    &:focus {
+      &:extend(.btn:hover);
+    }
+  }
+}
+
+.NavButton {
+  &,
+  &:hover,
+  &:focus {
+    &:extend(.btn:hover);
+  }
+}
+
+.Pager {
+  > span {
+    &,
+    &:hover,
+    &:focus {
+      &:extend(.pagination > li.disabled > a);
+    }
+  }
+}
+
+.MessageList .Item {
+  &:hover,
+  &:focus {
+    background-color: @whiteish;
+  }
 }
