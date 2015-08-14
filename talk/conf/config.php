@@ -54,16 +54,16 @@ $Configuration['Garden']['Cdns']['Disable'] = FALSE;
 $Configuration['Garden']['CanProcessImages'] = TRUE;
 $Configuration['Garden']['SystemUserID'] = '2';
 $Configuration['Garden']['Installed'] = TRUE;
-$Configuration['Garden']['Theme'] = 'bootstrap';
+$Configuration['Garden']['Theme'] = 'mht';
 $Configuration['Garden']['HomepageTitle'] = 'Miami Hawk Talk';
 $Configuration['Garden']['Description'] = '';
 $Configuration['Garden']['Locale'] = 'en-CA';
 $Configuration['Garden']['GuestTimeZone'] = 'America/Detroit';
 $Configuration['Garden']['EditContentTimeout'] = '3600';
 $Configuration['Garden']['Format']['Hashtags'] = FALSE;
-$Configuration['Garden']['ThemeOptions']['Name'] = 'Bootstrap';
-$Configuration['Garden']['ThemeOptions']['Styles']['Key'] = 'MHT';
-$Configuration['Garden']['ThemeOptions']['Styles']['Value'] = '%s_mht';
+
+// MHT
+$Configuration['MHT']['Environment']['Test'] = TRUE;
 
 // Plugins
 $Configuration['Plugins']['GettingStarted']['Dashboard'] = '1';
@@ -96,4 +96,4 @@ $Configuration['Vanilla']['Archive']['Exclude'] = FALSE;
 // Yaga
 $Configuration['Yaga']['Version'] = '1.0.3';
 
-// Last edited by Steve (127.0.0.1)2015-08-12 21:40:16
+// Last edited by Steve (127.0.0.1)2015-08-14 17:10:17
