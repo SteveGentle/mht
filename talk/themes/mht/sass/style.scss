@@ -8,10 +8,12 @@
  * MIT License (http://opensource.org/licenses/MIT)
  *
  */
- 
- // vendor libraries
+
+// vendor libraries
+@import "bootstrap-custom";
 @import "bootstrap";
-@import "fontawesome";
+@import "bootstrap-compass";
+@import "font-awesome.scss";
 @import "bootstrap-social";
 
 // library - analog to vanilla-bootstrap

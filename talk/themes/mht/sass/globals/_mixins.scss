@@ -3,12 +3,35 @@
 //
 // No styleguide reference.
 
-.reset-headings() {
+@mixin reset-headings() {
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: $font-family-base;
     font-size: $font-size-base;
     font-weight: 500;
     line-height: $line-height-base;
+  }
+}
+
+// MEDIA QUERIES
+// --------------------------------------------------
+// Assumes you want IE 8 and below to use largest screen size
+@mixin respond-to($viewport-width, $ie-version: 'lt-ie9') {
+  @media only screen and (min-width: $viewport-width) {
+    @content;
+  }
+  @if $ie-version == 'lt-ie9' {
+    html.lt-ie9 & { // Using Paul Irish's conditional comments
+      @content;
+    }
+  } @else if $ie-version == 'lt-ie8' {
+    html.lt-ie8 & { // Using Paul Irish's conditional comments
+      @content;
+    }
+  }
+}
+@mixin respond-under($viewport-width) {
+  @media only screen and (max-width: $viewport-width) {
+    @content;
   }
 }

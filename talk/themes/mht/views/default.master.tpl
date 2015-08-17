@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" class="sticky-footer-html">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{asset name="Head"}
-</head>
-<body id="{$BodyID}" class="{$BodyClass} sticky-footer-body">
-	<div id="Frame">
-		<div class="Head" id="Head">
-			<div class="Row">
-				<strong class="SiteTitle"><a href="{link path="/"}">{logo}</a></strong>
-				<div class="SiteSearch">{searchbox}</div>
-				<ul class="SiteMenu">
-					<!-- {dashboard_link} -->
-					{discussions_link}
-					{activity_link}
-					<!-- {inbox_link} -->
-					{custom_menu}
-					<!-- {profile_link}
-					{signinout_link}  -->
-				</ul>
-			</div>
-		</div>
-		<div id="Body">
-			<div class="Row">
-				<div class="BreadcrumbsWrapper">{breadcrumbs}</div>
-				<div class="Column PanelColumn" id="Panel">
-					{module name="MeModule"}
-					{asset name="Panel"}
-				</div>
-				<div class="Column ContentColumn" id="Content">{asset name="Content"}</div>
-			</div>
-		</div>
-		<div id="Foot">
-			<div class="Row">
-				<a href="{vanillaurl}" class="PoweredByVanilla" title="Community Software by Vanilla Forums">Powered by Vanilla</a>
-				{asset name="Foot"}
-			</div>
-		</div>
-	</div>
-	{event name="AfterBody"}
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {asset name="Head"}
+  </head>
+  <body id="{$BodyID}" class="{$BodyClass} sticky-footer-body">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">{t c="Toggle navigation"}</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{link path="home"}">{logo}</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {categories_link}
+            {discussions_link}
+            {activity_link}
+            {custom_menu}
+          </ul>
+          {if $User.SignedIn}
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+              {module name="MeModule"}
+            </ul>
+            <ul class="nav navbar-nav navbar-right visible-xs">
+              {profile_link}
+              {inbox_link}
+              {bookmarks_link}
+              {dashboard_link}
+              {signinout_link}
+            </ul>
+          {else}
+            <ul class="nav navbar-nav navbar-right">
+              {signin_link}
+            </ul>
+          {/if}
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="row">
+
+        <main class="page-content" role="main">
+          {breadcrumbs}
+          {if InSection(array("CategoryList", "CategoryDiscussionList", "DiscussionList"))}
+            <div class="well search-form">{searchbox}</div>
+          {/if}
+          {asset name="Content"}
+        </main>
+
+        <aside class="page-sidebar" role="complementary">
+          {asset name="Panel"}
+        </aside>
+
+      </div>
+    </section>
+
+    <footer class="page-footer sticky-footer">
+      <div class="container">
+        <div class="clearfix">
+          <p class="pull-left">{t c="Copyright"} &copy; {$smarty.now|date_format:"%Y"} <a href="{link path="home"}">{logo}</a></p>
+          <p class="pull-right hidden-xs">{t c="Powered by"} <a href="{vanillaurl}">Vanilla Forums</a></p>
+        </div>
+        {asset name="Foot"}
+      </div>
+    </footer>
+
+    {event name="AfterBody"}
+  </body>
 </html>

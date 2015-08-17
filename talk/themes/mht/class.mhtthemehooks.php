@@ -11,7 +11,7 @@ class CustomThemeHooks extends Gdn_Plugin{
 
         //remove core jquery
         $Sender->RemoveJsFile('jquery.js');
-
+        
         //root relative location of theme
         //$ThemeLoc = CombinePaths(array(Gdn::Request()->WebRoot(), '/themes', $Sender->Theme));
         // using the original CombinePath() function resulted in a double /talk/talk/ url

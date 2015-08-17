@@ -1,0 +1,40 @@
+//
+// # Grid
+//
+// No styleguide reference.
+
+@import "susy";
+
+$susy: (
+	columns: 12,
+	container: 1170px,
+	gutters: .25,
+	global-box-sizing: border-box
+);
+
+body {
+  position: relative;
+}
+
+.container {
+  //@extend .container;
+  @include container;
+}
+
+.row {
+  position: relative;
+  //@extend .row;
+  @include container;
+}
+
+@media (min-width: $screen-sm-min) {
+  .page-content {
+    //@include make-sm-column($page-content-columns);
+    @include span(9 of 12);
+  }
+
+  .page-sidebar {
+    //@include make-sm-column($page-sidebar-columns);
+    @include span(3 of 12 last);
+  }
+}
