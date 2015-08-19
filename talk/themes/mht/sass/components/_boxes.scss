@@ -1,0 +1,160 @@
+//
+// # Boxes
+//
+// No styleguide reference.
+
+.Box {
+  // Space out consecutive boxes
+  & + & {
+    margin-top: $line-height-computed;
+  }
+}
+
+.GuestBox {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  + .Box {
+    margin-top: $line-height-computed;
+    //@extend .Box + .Box;
+  }
+
+  .PopupWindow {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+.UserBox {
+  @extend .media;
+
+  + .Box {
+	  margin-top: $line-height-computed;
+  //  @extend .Box + .Box;
+  }
+
+  .PhotoWrap {
+    @extend .media-object;
+    @extend .media;
+    @extend .pull-left;
+  }
+
+  .Username,
+  .Email {
+    display: block;
+    @include text-overflow;
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+// ## MeBox
+//
+// No styleguide reference.
+
+.MeBox {
+  @extend .clearfix;
+
+  > .PhotoWrap,
+  .WhoIs,
+  .Username,
+  .MeMenu {
+    @extend .pull-left;
+  }
+
+  > .PhotoWrap {
+    @include navbar-vertical-align(32px);
+
+    img {
+      width: 32px;
+      height: 32px;
+      vertical-align: top;
+    }
+  }
+
+  .Username,
+  .FlyoutButton {
+    //@extend .nav > li > a;
+  	display:block;
+  	padding: 15px;
+  	position: relative;
+  	
+    //@extend .navbar-nav > li > a;
+    line-height: $line-height-computed;
+
+    .navbar-default & {
+      //@extend .navbar-default .navbar-nav > li > a;
+      color: $navbar-default-link-color;
+    }
+    .navbar-inverse & {
+      //@extend .navbar-inverse .navbar-nav > li > a;
+      color: $navbar-inverse-link-color;
+    }
+
+    &:hover,
+    &:focus {
+      //@extend .nav > li > a:hover;
+      text-decoration: none;
+      background-color: $nav-link-hover-bg;
+
+      //@extend .navbar-nav > li > a:hover;
+      color: $navbar-default-link-hover-color;
+      background-color: $navbar-default-link-hover-bg;
+
+      .navbar-default & {
+        //@extend .navbar-default .navbar-nav > li > a:hover;
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
+      }
+      .navbar-inverse & {
+        //@extend .navbar-inverse .navbar-nav > li > a:hover;
+        color: $navbar-inverse-link-hover-color;
+        background-color: $navbar-inverse-link-hover-bg;
+      }
+    }
+  }
+
+  .Open .FlyoutButton {
+    &,
+    &:hover,
+    &:focus {
+      .navbar-default & {
+        //@extend .navbar-default .navbar-nav > .active > a;
+        color: $navbar-default-link-active-color;
+        background-color: $navbar-default-link-active-bg;
+      }
+      .navbar-inverse & {
+        //@extend .navbar-inverse .navbar-nav > .active > a;
+        color: $navbar-inverse-link-active-color;
+        background-color: $navbar-inverse-link-active-bg;        
+      }
+    }
+  }
+
+  .MeMenu {
+    @extend .clearfix;
+  }
+
+  .MenuItems,
+  .FlyoutMenu {
+    color: $dropdown-link-color;
+    @extend .dropdown-menu-right;
+    //@extend .navbar-nav > li > .dropdown-menu;
+    margin-top: 0;
+    @include border-top-radius(0);
+
+  }
+
+  .ToggleFlyout {
+    @extend .pull-left;
+
+    em {
+      display: none;
+    }
+
+    .Arrow {
+      display: none;
+    }
+  }
+}

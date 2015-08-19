@@ -1,0 +1,73 @@
+//
+// # Pagination
+//
+// No styleguide reference.
+
+.NumberedPager {
+  @extend .pagination;
+
+  > a,
+  > span,
+  > div {
+//    @extend .pagination > li > a;
+      position: relative;
+      float: left; // Collapse white-space
+      padding: $padding-base-vertical $padding-base-horizontal;
+      line-height: $line-height-base;
+      text-decoration: none;
+      color: $pagination-color;
+      background-color: $pagination-bg;
+      border: 1px solid $pagination-border;
+      margin-left: -1px;
+
+    &:first-child {
+//      @extend .pagination > li:first-child > a;
+        margin-left: 0;
+        @include border-left-radius($border-radius-base);
+    }
+    &:last-child {
+//      @extend .pagination > li:last-child > a;
+        @include border-right-radius($border-radius-base);
+    }
+  }
+
+  > a {
+    &:hover,
+    &:focus {
+//      @extend .pagination > li > a:hover;
+      z-index: 3;
+      color: $pagination-hover-color;
+      background-color: $pagination-hover-bg;
+      border-color: $pagination-hover-border;
+    }
+  }
+
+  > span {
+    &,
+    &:hover,
+    &:focus {
+//      @extend .pagination > .disabled > span;
+      color: $pagination-disabled-color;
+      background-color: $pagination-disabled-bg;
+      border-color: $pagination-disabled-border;
+      cursor: $cursor-disabled;
+    }
+  }
+
+  .Highlight {
+    &,
+    &:hover,
+    &:focus {
+//      @extend .pagination > .active > a;
+      z-index: 2;
+      color: $pagination-active-color;
+      background-color: $pagination-active-bg;
+      border-color: $pagination-active-border;
+      cursor: default;
+    }
+  }
+}
+
+.PagerNub {
+  display: none;
+}

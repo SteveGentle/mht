@@ -9,74 +9,74 @@
 
 .DataList {
   list-style: none;
-  &:extend(.list-group);
+  @extend .list-group;
 
   &:empty {
     display: none;
   }
 
   .Foot {
-    &:extend(.list-group-item);
+    @extend .list-group-item;
 
     &:first-child {
-      &:extend(.list-group-item:first-child);
+      @extend .list-group-item:first-child;
     }
     &:last-child {
-      &:extend(.list-group-item:last-child);
+      @extend .list-group-item:last-child;
     }
   }
 
   .Item {
-    &:extend(.list-group-item);
+    @extend .list-group-item;
 
     &:first-child {
-      &:extend(.list-group-item:first-child);
+      @extend .list-group-item:first-child;
     }
     &:last-child {
-      &:extend(.list-group-item:last-child);
+      @extend .list-group-item:last-child;
     }
   }
 
   &.Condensed .Item {
-    .reset-headings();
+    @include reset-headings();
 
     .Photo img {
-      .square((@line-height-computed * 2));
+      @include square(($line-height-computed * 2));
     }
 
     .Excerpt {
-      .pull-left();
+      @extend .pull-left;
     }
 
     .Meta {
-      .pull-right();
+      @extend .pull-right;
     }
   }
 
   &.Activities .CommentForm {
-    &:extend(.list-group-item);
+    @extend .list-group-item;
 
     &:first-child {
-      &:extend(.list-group-item:first-child);
+      @extend .list-group-item:first-child;
     }
     &:last-child {
-      &:extend(.list-group-item:last-child);
+      @extend .list-group-item:last-child;
     }
   }
 
   .FormWrapper + &,
   .ActivityFormWrap + & {
-    margin-top: @line-height-computed;
+    margin-top: $line-height-computed;
   }
 }
 
 .DataList-Search {
   .Item {
-    .reset-headings();
+    @include reset-headings();
 
     .PhotoWrap {
-      .pull-left();
-      &:extend(.media > .pull-left);
+      @extend .pull-left;
+      padding-right: $padding-base-horizontal;
     }
   }
 
@@ -92,27 +92,28 @@
 // No styleguide reference.
 
 .DataTableWrap {
-  &:extend(.panel);
-  &:extend(.panel-default);
+  //@extend .panel;
+  @extend .panel-default;
 
   .DataTable {
-    &:extend(.panel > .table);
+    //@extend .panel > .table;
+    @extend .table;
   }
 }
 
 .DataTable {
   table-layout: fixed;
-  .reset-headings();
-  &:extend(.table-hover all);
+  @include reset-headings();
+  @extend .table-hover;
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: @font-size-base + 1px;
+    font-size: $font-size-base + 1px;
     font-weight: 500;
-    line-height: @line-height-computed;
+    line-height: $line-height-computed;
 
     &,
     a {
-      color: @text-color;
+      color: $text-color;
     }
   }
 
@@ -122,7 +123,7 @@
     }
 
     .BigCount {
-      font-size: @font-size-large;
+      font-size: $font-size-large;
     }
   }
 
@@ -135,13 +136,13 @@
     width: 30px;
   }
 
-  @media (max-width: @screen-xs-max) {
+  @media (max-width: $screen-xs-max) {
     .BlockColumn {
       display: none;
     }
   }
 
-  @media (max-width: @screen-sm-max) {
+  @media (max-width: $screen-sm-max) {
     .BigCount {
       display: none;
     }
@@ -151,7 +152,7 @@
     }
   }
 
-  @media (max-width: @screen-md-max) {
+  @media (max-width: $screen-md-max) {
     .FirstUser {
       display: none;
     }
@@ -170,24 +171,25 @@
   }
 
   .PhotoWrap {
-    .pull-left();
-    &:extend(.media-object);
-    &:extend(.media > .pull-left);
+    @extend .pull-left;
+    @extend .media-object;
+    //@extend .media > .pull-left;
+    padding-right: 10px;
   }
 
   .ProfilePhoto {
-    &:extend(.ProfilePhotoMedium);
+    @extend .ProfilePhotoMedium;
   }
 
   .Meta {
     display: block;
-    .text-overflow();
+    @include text-overflow;
   }
 }
 
 .BlockTitle {
   display: block;
-  .text-overflow();
+  @include text-overflow;
 }
 
 // -----------------------------------------------------------------------------
@@ -220,19 +222,19 @@
 
 .MessageList {
   position: relative;
-  margin-bottom: @line-height-computed;
+  margin-bottom: $line-height-computed;
 
   .Item {
     position: relative;
     padding: 0;
-    margin-bottom: @line-height-computed;
+    margin-bottom: $line-height-computed;
     margin-left: 64px;
-    &:extend(.panel);
-    &:extend(.panel-default);
+    @extend .panel;
+    @extend .panel-default;
 
     &:hover,
     &:focus {
-      background-color: @panel-bg;
+      background-color: $panel-bg;
     }
 
     .Options {
@@ -243,8 +245,8 @@
 
   .Item-Header,
   &.Conversation .Meta {
-    &:extend(.panel-heading);
-    &:extend(.panel-default > .panel-heading);
+    @extend .panel-heading;
+    //@extend .panel-default > .panel-heading;
 
     .PhotoWrap {
       position: absolute;
@@ -252,7 +254,7 @@
       left: -65px;
     }
 
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       .AuthorWrap {
         float: left;
       }
@@ -265,14 +267,14 @@
 
   .Item-Body,
   &.Conversation .Message {
-    &:extend(.panel-body);
+    @extend .panel-body;
   }
 }
 
 .MessageList,
 .MessageForm {
   .Author .ProfilePhoto {
-    .square(48px);
+    @include square(48px);
   }
 }
 
@@ -284,13 +286,13 @@
 
 .CategoryBox,
 .CategoryGroup {
-  &:extend(.panel);
-  &:extend(.panel-default);
+  @extend .panel;
+  @extend .panel-default;
 
   .H {
-    &:extend(.panel-heading);
-    &:extend(.panel-default > .panel-heading);
-    &:extend(.panel-title);
+    @extend .panel-heading;
+    //@extend .panel-default > .panel-heading;
+    @extend .panel-title;
   }
 }
 
@@ -306,23 +308,25 @@
 }
 
 .CategoryBox {
+  @extend .panel;
   .DataList {
-    &:extend(.panel > .list-group);
+    //@extend .panel > .list-group;
+    @extend .list-group;
 
     .Item {
-      &:extend(.panel > .list-group .list-group-item);
+      //@extend .panel > .list-group .list-group-item;
 
       &:first-child {
-        &:extend(.panel-heading + .list-group .list-group-item:first-child);
+        //@extend .panel-heading + .list-group .list-group-item:first-child;
       }
       &:last-child {
-        &:extend(.panel > .list-group:last-child .list-group-item:last-child);
+        //@extend .panel > .list-group:last-child .list-group-item:last-child;
       }
     }
   }
 
   .MorePager {
-    &:extend(.panel-footer);
+    @extend .panel-footer;
   }
 }
 
@@ -335,8 +339,8 @@
 .PagerWrap,
 .PageControls,
 .BeforeCommentHeading {
-  margin: @line-height-computed 0;
-  &:extend(.clearfix all);
+  margin: $line-height-computed 0;
+  @extend .clearfix;
 
   &:empty {
     display: none;
@@ -350,7 +354,7 @@
 
   .PagerWrap,
   .NumberedPager {
-    .pull-right();
+    @extend .pull-right;
   }
 }
 
@@ -363,6 +367,6 @@
 }
 
 .Foot.Closed {
-  margin-bottom: @line-height-computed;
+  margin-bottom: $line-height-computed;
   margin-left: 64px;
 }

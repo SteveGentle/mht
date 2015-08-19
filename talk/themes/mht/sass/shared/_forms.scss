@@ -14,7 +14,7 @@ select {
   }
 
   // Placeholder
-  //.placeholder();
+  @include placeholder;
 
   &[disabled],
   &[readonly],
@@ -60,17 +60,18 @@ form .P {
   @extend .radio;
 }
 
-.RadioLabel {
-  input[type="radio"] {
+// not needed; inherited from above rule
+//.RadioLabel {
+//  input[type="radio"] {
 //    @extend .radio input[type="radio"];
-  }
-}
+//  }
+//}
 
-.CheckBoxLabel {
-  input[type="checkbox"] {
+//.CheckBoxLabel {
+//  input[type="checkbox"] {
 //    @extend .radio input[type="radio"];
-  }
-}
+//  }
+//}
 
 .icheck-label {
   padding-left: 0;

@@ -7,23 +7,24 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: @zindex-popover;
+  z-index: $zindex-popover;
   padding: 20px;
   width: 100%;
-  max-width: (@popover-max-width + (20px * 2));
+  max-width: ($popover-max-width + (20px * 2));
 }
 
 .InformMessage {
   position: static;
   display: block;
-  &:extend(.popover);
-  &:extend(.popover-content);
+  @extend .popover;
+  @extend .popover-content;
 
   .Dismissable & {
     padding-right: (14px + 20); // Popover padding + size of close icon
   }
 
   .Close {
-    &:extend(.alert-dismissable .close);
+//    @extend .alert-dismissible .close;
+    @extend .close;
   }
 }

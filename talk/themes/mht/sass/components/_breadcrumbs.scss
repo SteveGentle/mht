@@ -1,0 +1,35 @@
+//
+// # Breadcrumbs
+//
+// No styleguide reference.
+
+.Breadcrumbs {
+  display: block;
+  @extend .breadcrumb;
+
+  .Crumb {
+    display: none;
+  }
+
+  .CrumbLabel,
+  .Crumb + span {
+    //@extend .breadcrumb > li;
+    display: inline-block
+
+    //@extend .breadcrumb > li + li all;
+  }
+  .Crumb + span:before {
+    content: "#{$breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+    padding: 0 5px;
+    color: $breadcrumb-color;
+  }
+
+
+  .HomeCrumb:before {
+    display: none; // Hide initial crumb-separator
+  }
+
+  .Last a {
+    //@extend .breadcrumb > .active;
+  }
+}

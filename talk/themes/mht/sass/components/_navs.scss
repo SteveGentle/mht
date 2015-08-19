@@ -1,0 +1,27 @@
+//
+// # Navs
+//
+// No styleguide reference.
+
+.FilterMenu {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .nav-stacked;
+
+  .page-sidebar & {
+    padding: $padding-large-vertical 0;
+  }
+
+  .page-content & {
+    display: none;
+  }
+  
+  .Active {
+  	@extend li.active;
+  	
+  	.Count {
+      @extend .badge;
+  	}
+  }
+
+}

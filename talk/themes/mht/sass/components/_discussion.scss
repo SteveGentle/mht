@@ -4,17 +4,17 @@
 // No styleguide reference.
 
 .Item {
-  &:extend(.clearfix all);
+  @extend .clearfix;
 
   .Title {
     margin: 0;
 
     &,
     a {
-      font-size: @font-size-base + 1px;
+      font-size: $font-size-base + 1px;
       font-weight: 500;
-      line-height: @line-height-computed;
-      color: @text-color;
+      line-height: $line-height-computed;
+      color: $text-color;
       vertical-align: top;
     }
   }
@@ -22,36 +22,36 @@
   .Username,
   .Conversation & .Name {
     font-weight: 500;
-    color: @text-color;
+    color: $text-color;
   }
 
   .Conversation & .Meta {
-    font-size: @font-size-base;
+    font-size: $font-size-base;
     text-align: right;
-    &:extend(.clearfix all);
+    @extend .clearfix;
   }
 
   .Meta,
   .Conversation & .MItem {
-    font-size: @font-size-small;
-    line-height: @line-height-computed;
+    font-size: $font-size-small;
+    line-height: $line-height-computed;
 
     &,
     a {
-      &:extend(.text-muted);
+      @extend .text-muted;
 
       // When used in lists and tables, make the meta color a mix of the list
       // group bg and the global text color.
       .DataList &,
       .DataTable & {
-        color: mix(@list-group-bg, @text-color);
+        color: mix($list-group-bg, $text-color);
       }
 
       // When used in dropdowns, make the meta color a mix of the dropdown bg
       // and link color.
       .MenuItems &,
       .FlyoutMenu & {
-        color: mix(@dropdown-bg, @dropdown-link-color);
+        color: mix($dropdown-bg, $dropdown-link-color);
       }
     }
   }
@@ -59,7 +59,7 @@
   .Meta,
   .AuthorInfo {
     .MItem {
-      padding-right: @padding-small-horizontal;
+      padding-right: $padding-small-horizontal;
 
       &:last-child {
         padding-right: 0;
@@ -70,43 +70,44 @@
   .Meta {
     .MItem {
       &.Category a {
-        &:extend(.label);
-        &:extend(.label-default);
+        @extend .label;
+        @extend .label-default;
 
         &:hover,
         &:focus {
-          &:extend(.label[href]:hover);
-          &:extend(.label-default[href]:hover);
+          //@extend .label[href]:hover;
+          //@extend .label-default[href]:hover;
+          background-color: darken($label-default-bg, 10%);
         }
       }
     }
   }
 
   .Conversation & .Author {
-    .pull-left();
+    @extend .pull-left;
   }
 
   .Author .PhotoWrap {
-    .pull-left();
-    padding-right: @padding-base-horizontal;
+    @extend .pull-left;
+    padding-right: $padding-base-horizontal;
   }
 
   .AuthorInfo {
-    &:extend(.text-muted);
+    @extend .text-muted;
   }
 
   .Options {
-    .pull-right();
+    @extend .pull-right;
   }
 
   .OptionsMenu {
     + .AdminCheck {
-      padding-left: @padding-small-vertical;
+      padding-left: $padding-small-vertical;
     }
   }
 
   .ActionBlock {
-    margin-top: (@line-height-computed / 2);
+    margin-top: ($line-height-computed / 2);
   }
 }
 
@@ -118,46 +119,47 @@ tr.Item {
 }
 
 .Item-Header {
-  &:extend(.clearfix all);
+  @extend .clearfix;
 
   .PhotoWrap {
-    .pull-left();
+    @extend .pull-left;
   }
 }
 
 .Item-Icon {
-  &:extend(.media-object);
-  &:extend(.media > .pull-left);
-  .pull-left();
+  @extend .media-object;
+  //@extend .media > .pull-left;
+  padding-right: 10px;
+  @extend .pull-left;
 }
 
 .Item.Category {
   .CategoryName {
     margin: 0;
-    font-size: @font-size-base;
-    line-height: @line-height-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 }
 
 .Item.Activity,
 .Item.ActivityComment {
   &:hover {
-    background-color: @list-group-bg;
+    background-color: $list-group-bg;
   }
 
   .ItemContent {
-    &:extend(.media-body);
+    @extend .media-body;
   }
 }
 
 .PageTitle {
   .Options {
-    .pull-right();
+    @extend .pull-left;
   }
 
   .OptionsMenu {
     + .AdminCheck {
-      padding-left: @padding-small-vertical;
+      padding-left: $padding-small-vertical;
     }
   }
 }
@@ -167,26 +169,26 @@ tr.Item {
 
 .ActionBlock {
   font-style: italic;
-  &:extend(.text-muted);
+  @extend .text-muted;
 
   a {
     font-style: normal;
   }
 
   .React {
-    &:extend(.btn);
-    &:extend(.btn-default);
-    &:extend(.btn-xs);
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-xs;
 
     &:hover,
     &:focus {
-      &:extend(.btn:hover);
-      &:extend(.btn-default:hover);
+      @extend .btn:hover;
+      @extend .btn-default:hover;
     }
 
     &:active {
-      &:extend(.btn:active);
-      &:extend(.btn-default:active);
+      @extend .btn:active;
+      @extend .btn-default:active;
     }
   }
 }
@@ -198,9 +200,9 @@ tr.Item {
   position: relative;
   margin: 0;
   margin-left: 64px;
-  border-radius: @list-group-border-radius;
-  &:extend(.panel);
-  &:extend(.panel-default);
+  border-radius: $list-group-border-radius;
+  @extend .panel;
+  @extend .panel-default;
 
   // Reset nested forms
   .Item & {
@@ -233,7 +235,7 @@ tr.Item {
   }
 
   .Form-Body {
-    &:extend(.panel-body);
+    @extend .panel-body;
   }
 
   .H {
@@ -243,15 +245,16 @@ tr.Item {
   .Buttons {
     margin: 15px -15px -15px;
     text-align: right;
-    &:extend(.panel-footer);
+    @extend .panel-footer;
+    padding: 15px;
 
     .Back {
       display: none;
-      .pull-left();
-      line-height: @input-height-base;
+      @extend .pull-left;
+      line-height: $input-height-base;
     }
 
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       .Back {
         display: block;
       }

@@ -5,9 +5,9 @@
 
 .Count,
 .Alert {
-  &:extend(.badge);
+  @extend .badge;
 
   &:empty {
-    &:extend(.badge:empty);
+    @extend .badge:empty;
   }
 }

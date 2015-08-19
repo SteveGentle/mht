@@ -5,5 +5,5 @@
 
 a.Close,
 a.Delete {
-  &:extend(.close all);
+  @extend .close;
 }

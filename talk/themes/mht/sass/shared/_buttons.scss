@@ -9,28 +9,28 @@
 
   &:hover,
   &:focus {
-    @extend .btn:hover;
-    @extend .btn-default:hover;
+  //  @extend .btn:hover;
+  //  @extend .btn-default:hover;
   }
 
   &:active {
-    @extend .btn:active;
-    @extend .btn-default:active;
+  //  @extend .btn:active;
+  //  @extend .btn-default:active;
   }
 
   &:focus {
-    @extend .btn:focus;
+  //  @extend .btn:focus;
   }
 
   &[disabled],
   fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      @extend .btn.disabled;
-      @extend .btn-default.disabled;
-    }
+  //  &,
+  //  &:hover,
+  //  &:focus,
+  //  &:active {
+  //    @extend .btn.disabled;
+  //    @extend .btn-default.disabled;
+  //  }
   }
 }
 
@@ -39,21 +39,21 @@
 
   &:hover,
   &:focus {
-    @extend .btn-primary:hover;
+  //  @extend .btn-primary:hover;
   }
 
   &:active {
-    @extend .btn-primary:active;
+  //  @extend .btn-primary:active;
   }
 
   &[disabled],
   fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      @extend .btn-primary.disabled;
-    }
+  //  &,
+  //  &:hover,
+  //  &:focus,
+  //  &:active {
+  //    @extend .btn-primary.disabled;
+  //  }
   }
 }
 
@@ -62,21 +62,21 @@
 
   &:hover,
   &:focus {
-    @extend .btn-danger:hover;
+  //  @extend .btn-danger:hover;
   }
 
   &:active {
-    @extend .btn-danger:active;
+  //  @extend .btn-danger:active;
   }
 
   &[disabled],
   fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      @extend .btn-danger.disabled;
-    }
+  //  &,
+  //  &:hover,
+  //  &:focus,
+  //  &:active {
+  //    @extend .btn-danger.disabled;
+  //  }
   }
 }
 
@@ -112,25 +112,25 @@
 
   &:hover,
   &:focus {
-    @extend .btn:hover;
+  //  @extend .btn:hover;
   }
 
   &:active {
-    @extend .btn:active;
+  //  @extend .btn:active;
   }
 
   &:focus {
-    @extend .btn:focus;
+  //  @extend .btn:focus;
   }
 
   &[disabled],
   fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      @extend .btn.disabled;
-    }
+  //  &,
+  //  &:hover,
+  //  &:focus,
+  //  &:active {
+  //    @extend .btn.disabled;
+  //  }
   }
 
   .Icon {

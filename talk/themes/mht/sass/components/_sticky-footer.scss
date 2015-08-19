@@ -9,12 +9,12 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: @sticky-footer-height;
-  margin-top: @sticky-footer-margin-top;
+  min-height: $sticky-footer-height;
+  margin-top: $sticky-footer-margin-top;
 }
 
 .sticky-footer-body {
-  margin-bottom: (@sticky-footer-height + @sticky-footer-margin-top);
+  margin-bottom: ($sticky-footer-height + $sticky-footer-margin-top);
 }
 
 .sticky-footer-html {

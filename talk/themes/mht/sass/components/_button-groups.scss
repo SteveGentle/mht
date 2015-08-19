@@ -1,0 +1,35 @@
+//
+// # Button Groups
+//
+// No styleguide reference.
+
+.ButtonGroup {
+  @extend .btn-group;
+
+  > .Button {
+    @extend .btn;
+
+    &:hover,
+    &:focus,
+    &:active {
+    //  @extend .btn:hover;
+    }
+
+    &:first-child {
+      //@extend .btn:first-child;
+
+      &:not(:last-child) {
+      //  @extend .btn:first-child:not(:last-child):not(.dropdown-toggle);
+      }
+    }
+
+    &:last-child:not(:first-child) {
+    //  @extend .btn:last-child:not(:first-child);
+    }
+
+    &:not(:first-child):not(:last-child) {
+    //  @extend .btn:not(:first-child):not(:last-child):not(.dropdown-toggle);
+    }
+  }
+
+}

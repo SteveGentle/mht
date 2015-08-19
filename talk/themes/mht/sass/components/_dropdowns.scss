@@ -11,23 +11,35 @@
     list-style: none;
   }
 
-  //li > a {
+  li > a {
   //  @extend .dropdown-menu > li > a;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: $line-height-base;
+    color: $dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
 
-  //  &:hover,
-  //  &:focus {
-  //    @extend .dropdown-menu > li > a:hover;
-  //  }
-  //}
+    &:hover,
+    &:focus {
+      //@extend .dropdown-menu > li > a:hover;
+      text-decoration: none;
+      color: $dropdown-link-hover-color;
+      background-color: $dropdown-link-hover-bg;
+    }
+  }
 
-  //li > hr {
-  //  border: 0;
-  //  @extend .dropdown-menu .divider;
-  //}
+  li > hr {
+    border: 0;
+    //@extend .dropdown-menu .divider;
+    @include nav-divider($dropdown-divider-bg);
+  }
 
-  //.Open > & {
-  //  @extend .open > .dropdown-menu;
-  //}
+  .Open > & {
+    //@extend .open > .dropdown-menu;
+    display: block;
+  }
 }
 
 .FlyoutMenu {
@@ -47,7 +59,8 @@
       padding: 0 $padding-base-horizontal $padding-base-vertical;
 
       a {
-//        @extend dropdown-menu-right;
+        //@extend .dropdown-menu-right;
+        @extend .pull-right;
       }
     }
 
@@ -116,17 +129,32 @@
   }
 
   li {
-//    @extend .dropdown-menu > li > a;
+    //@extend .dropdown-menu > li > a;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: $line-height-base;
+    color: $dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
 
-    &:hover {
-//      @extend .dropdown-menu > li > a:hover;
+    &:hover,
+    &:focus {
+      //@extend .dropdown-menu > li > a:hover;
+      text-decoration: none;
+      color: $dropdown-link-hover-color;
+      background-color: $dropdown-link-hover-bg;
     }
   }
 
   .cur {
     &,
     &:hover {
-//      @extend .dropdown-menu > .active > a;
+      //@extend .dropdown-menu > .active > a;
+      color: $dropdown-link-active-color;
+      text-decoration: none;
+      outline: 0;
+      background-color: $dropdown-link-active-bg;
     }
   }
 }

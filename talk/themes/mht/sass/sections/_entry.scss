@@ -1,0 +1,57 @@
+//
+// # Entry
+//
+// No styleguide reference.
+
+.Section-Entry {
+  .page-content {
+    @include make-md-column(8);
+    @include make-md-column-offset(2);
+
+    @include make-lg-column(6);
+    @include make-lg-column-offset(3);
+  }
+}
+
+.MultipleEntryMethods {
+  @extend .row;
+
+  .MainForm,
+  .Methods {
+    @include make-sm-column(6);
+  }
+
+  .Methods {
+    b {
+      @extend label;
+      //@extend form label;
+    }
+  }
+}
+
+.SingleEntryMethod,
+.MultipleEntryMethods {
+  + .Buttons {
+    @extend .text-left;
+    @extend .clearfix;
+
+    .Button {
+      float: right;
+    }
+
+    .CheckBoxLabel {
+      float: right;
+      padding-right: $padding-base-horizontal;
+    }
+
+    .CreateAccount {
+      float: left;
+    }
+
+    .CheckBoxLabel,
+    .CreateAccount {
+      margin: 0;
+      //@extend .form-horizontal .form-control-static;
+    }
+  }
+}
