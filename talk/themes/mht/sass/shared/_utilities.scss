@@ -1,10 +1,10 @@
-//
+																																																																																								//
 // # Utilities
 //
 // No styleguide reference.
 
 .Aside {
-  &:extend(.pull-right);
+  @extend .pull-right;
 }
 
 .Hidden {
@@ -14,14 +14,14 @@
 .SpDropdownHandle {
   position: static;
   min-width: 0;
-  &:extend(.caret all);
+  @extend .caret;
 }
 
 .TinyProgress {
   position: relative;
   display: inline-block;
-  height: @line-height-computed;
-  width: @line-height-computed;
+  height: $line-height-computed;
+  width: $line-height-computed;
   vertical-align: top;
-  line-height: @line-height-computed;
+  line-height: $line-height-computed;
 }

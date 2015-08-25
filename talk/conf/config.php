@@ -20,8 +20,8 @@ $Configuration['EnabledPlugins']['Flagging'] = TRUE;
 $Configuration['EnabledPlugins']['Ignore'] = TRUE;
 $Configuration['EnabledPlugins']['Pockets'] = TRUE;
 $Configuration['EnabledPlugins']['Gravatar'] = TRUE;
-$Configuration['EnabledPlugins']['cleditor'] = TRUE;
 $Configuration['EnabledPlugins']['Emotify'] = TRUE;
+$Configuration['EnabledPlugins']['cleditor'] = TRUE;
 
 // Garden
 $Configuration['Garden']['Title'] = 'Miami Hawk Talk';
@@ -96,4 +96,4 @@ $Configuration['Vanilla']['Archive']['Exclude'] = FALSE;
 // Yaga
 $Configuration['Yaga']['Version'] = '1.0.3';
 
-// Last edited by Steve (127.0.0.1)2015-08-19 13:12:54
+// Last edited by Steve (127.0.0.1)2015-08-24 00:03:35

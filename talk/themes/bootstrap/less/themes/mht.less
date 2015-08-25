@@ -3,8 +3,35 @@
 // No styleguide reference.
 
 @import "../style";
-@import "../../bower_components/bootswatch/mht/variables";
-@import "../../bower_components/bootswatch/mht/bootswatch";
+@import "../more/mht/variables";
+@import "../more/mht/bootswatch";
+
+
+// page top stuffs
+
+/*.Breadcrumbs {
+	background-color: #fd0;
+	a {
+		//color: @brand-primary;
+		&:hover {
+			//color: @whiteish;
+		}
+	}
+}*/
+
+.Breadcrumbs {
+	#gradient.vertical(@whiteish; @gray-lighter; 0%, 75%);
+}
+
+h1.H,
+.HomepageTitle,
+.PageTitle,
+.PageTitle h1 {
+	color: @brand-primary;
+	line-height: (@line-height-computed * 2);
+	margin-top: (@line-height-computed * 2);
+	border-bottom-color: @brand-primary;
+}
 
 .TagCloud {
 	padding: 0;
@@ -52,4 +79,14 @@
   &:focus {
     background-color: @whiteish;
   }
+}
+
+.TextBoxWrapper {
+  width: 100%;
+  font-size: @font-size-base;
+}
+
+.MessageForm .Buttons {
+//	background-color: #007b89;
+//	padding: 15px;
 }
