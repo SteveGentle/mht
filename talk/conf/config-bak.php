@@ -12,7 +12,6 @@ $Configuration['Database']['Password'] = 'root';
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';
-$Configuration['EnabledApplications']['Yaga'] = 'yaga';
 
 // EnabledPlugins
 $Configuration['EnabledPlugins']['HtmLawed'] = 'HtmLawed';
@@ -23,8 +22,6 @@ $Configuration['EnabledPlugins']['Pockets'] = TRUE;
 $Configuration['EnabledPlugins']['Gravatar'] = TRUE;
 $Configuration['EnabledPlugins']['Emotify'] = TRUE;
 $Configuration['EnabledPlugins']['cleditor'] = TRUE;
-$Configuration['EnabledPlugins']['Quotes'] = TRUE;
-$Configuration['EnabledPlugins']['YagaRankInMeta'] = TRUE;
 
 // Garden
 $Configuration['Garden']['Title'] = 'Miami Hawk Talk';
@@ -50,8 +47,8 @@ $Configuration['Garden']['Email']['SmtpPassword'] = '';
 $Configuration['Garden']['Email']['SmtpPort'] = '25';
 $Configuration['Garden']['Email']['SmtpSecurity'] = '';
 $Configuration['Garden']['InputFormatter'] = 'Html';
-$Configuration['Garden']['Html']['SafeStyles'] = FALSE;
-$Configuration['Garden']['Version'] = '2.1.11';
+$Configuration['Garden']['Html']['SafeStyles'] = TRUE;
+$Configuration['Garden']['Version'] = '2.1.9';
 $Configuration['Garden']['RewriteUrls'] = TRUE;
 $Configuration['Garden']['Cdns']['Disable'] = FALSE;
 $Configuration['Garden']['CanProcessImages'] = TRUE;
@@ -75,7 +72,7 @@ $Configuration['Plugins']['GettingStarted']['Plugins'] = '1';
 $Configuration['Plugins']['GettingStarted']['Discussion'] = '1';
 $Configuration['Plugins']['GettingStarted']['Profile'] = '1';
 $Configuration['Plugins']['GettingStarted']['Registration'] = '1';
-$Configuration['Plugins']['Flagging']['UseDiscussions'] = '1';
+$Configuration['Plugins']['Flagging']['UseDiscussions'] = FALSE;
 $Configuration['Plugins']['Flagging']['CategoryID'] = '27';
 
 // Routes
@@ -86,7 +83,7 @@ $Configuration['Vanilla']['Version'] = '2.1.9';
 $Configuration['Vanilla']['Categories']['Use'] = TRUE;
 $Configuration['Vanilla']['Categories']['MaxDisplayDepth'] = '3';
 $Configuration['Vanilla']['Categories']['DoHeadings'] = '1';
-$Configuration['Vanilla']['Categories']['HideModule'] = FALSE;
+$Configuration['Vanilla']['Categories']['HideModule'] = '1';
 $Configuration['Vanilla']['Categories']['Layout'] = 'modern';
 $Configuration['Vanilla']['Discussions']['Layout'] = 'modern';
 $Configuration['Vanilla']['Discussions']['PerPage'] = '30';
@@ -98,14 +95,5 @@ $Configuration['Vanilla']['Archive']['Exclude'] = FALSE;
 
 // Yaga
 $Configuration['Yaga']['Version'] = '1.0.3';
-$Configuration['Yaga']['Reactions']['Enabled'] = '1';
-$Configuration['Yaga']['Reactions']['RecordLimit'] = 10;
-$Configuration['Yaga']['Badges']['Enabled'] = '1';
-$Configuration['Yaga']['Badges']['DefaultPhoto'] = 'applications/yaga/design/images/default_badge.png';
-$Configuration['Yaga']['Ranks']['Enabled'] = '1';
-$Configuration['Yaga']['Ranks']['Photo'] = '/uploads/yaga/AEFT8BOYJT2X.jpg';
-$Configuration['Yaga']['LeaderBoard']['Enabled'] = '';
-$Configuration['Yaga']['LeaderBoard']['Limit'] = '';
-$Configuration['Yaga']['BestContent']['PerPage'] = 10;
 
-// Last edited by Steve (127.0.0.1)2015-09-01 06:19:34
+// Last edited by Steve (127.0.0.1)2015-08-24 00:03:35

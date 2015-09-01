@@ -14,14 +14,19 @@
 @gray-light:             #808080;
 @gray-lighter:           #ddd;
 @whiteish:               #f9f9f9;
+@white:                  #fff;
 
 @brand-primary:         #c41230;                        //red
 @brand-dark:            darken(@brand-primary, 15%);    //red - darker
-@brand-light:           lighten(@brand-primary, 15%);   //red - darker
+@brand-light:           lighten(@brand-primary, 15%);   //red - lighter
 @brand-success:         #c3d7a4;                        //green
 @brand-info:            #80bdc4;                        //light teal
 @brand-warning:         #fd0;                           //yellow
 @brand-danger:          #e15829;                        //lighter red
+
+@brand-accent1:         #a7a6a3;                        //gray
+@brand-accent2:         #c2b8a3;                        //tan
+@brand-accent3:         #2c5e8d;                        //blue
 
 
 //== Scaffolding
@@ -29,7 +34,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @whiteish;
 //** Global text color on `<body>`.
 @text-color:            @gray;
 
@@ -57,7 +62,7 @@
 
 @font-size-h1:            floor((@font-size-base * 2.77)); // ~36px
 @font-size-h2:            floor((@font-size-base * 2.31)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.85)); // ~24px
+@font-size-h3:            floor((@font-size-base * 1.85)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.32)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.92)); // ~12px
@@ -65,7 +70,7 @@
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.53846153; // 20/13
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+@line-height-computed:    ceil((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    @font-family-sans-serif;
@@ -148,7 +153,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #fff;
-@btn-default-bg:                 @gray-dark;
+@btn-default-bg:                 @brand-accent3;
 @btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              @btn-default-color;

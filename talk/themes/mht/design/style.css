@@ -1087,7 +1087,7 @@ body {
   font-size: 13px;
   line-height: 1.53846153;
   color: #777777;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 input,
 button,
@@ -1134,7 +1134,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.53846153;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1148,8 +1148,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #dddddd;
 }
@@ -1229,8 +1229,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 19px;
-  margin-bottom: 9.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 h1 small,
 .h1 small,
@@ -1255,8 +1255,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h4 small,
 .h4 small,
@@ -1285,7 +1285,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 h4,
 .h4 {
@@ -1300,10 +1300,10 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 9.5px;
+  margin: 0 0 10px;
 }
 .lead {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.4;
@@ -1423,14 +1423,14 @@ a.bg-danger:hover {
 h1.H,
 .HomepageTitle,
 .PageTitle {
-  padding-bottom: 8.5px;
-  margin: 38px 0 19px;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
   border-bottom: 1px solid #dddddd;
 }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 9.5px;
+  margin-bottom: 10px;
 }
 ul ul,
 ol ul,
@@ -1454,7 +1454,7 @@ ol ol {
 }
 dl {
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 dt,
 dd {
@@ -1490,8 +1490,8 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 9.5px 19px;
-  margin: 0 0 19px;
+  padding: 10px 20px;
+  margin: 0 0 20px;
   font-size: 16.25px;
   border-left: 5px solid #dddddd;
 }
@@ -1538,7 +1538,7 @@ blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 address {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-style: normal;
   line-height: 1.53846153;
 }
@@ -1571,8 +1571,8 @@ kbd kbd {
 }
 pre {
   display: block;
-  padding: 9px;
-  margin: 0 0 9.5px;
+  padding: 9.5px;
+  margin: 0 0 10px;
   font-size: 12px;
   line-height: 1.53846153;
   word-break: break-all;
@@ -2284,7 +2284,7 @@ th {
 table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2328,7 +2328,7 @@ table > tbody + tbody {
 }
 .table .table,
 table table {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -2568,7 +2568,7 @@ table > tfoot > tr.danger > th {
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 14.25px;
+    margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #dddddd;
@@ -2627,7 +2627,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-size: 19.5px;
   line-height: inherit;
   color: #777777;
@@ -2685,7 +2685,7 @@ select,
 .token-input-list {
   display: block;
   width: 100%;
-  height: 37px;
+  height: 38px;
   padding: 8px 12px;
   font-size: 13px;
   line-height: 1.53846153;
@@ -2753,7 +2753,7 @@ input[type="search"] {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: 37px;
+    line-height: 38px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -2792,7 +2792,7 @@ form .P {
 }
 .radio label,
 .checkbox label {
-  min-height: 19px;
+  min-height: 20px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -2932,7 +2932,7 @@ select[multiple].form-group-lg .form-control {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 46.25px;
+  padding-right: 47.5px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2940,9 +2940,9 @@ select[multiple].form-group-lg .form-control {
   right: 0;
   z-index: 2;
   display: block;
-  width: 37px;
-  height: 37px;
-  line-height: 37px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
   text-align: center;
   pointer-events: none;
 }
@@ -3047,7 +3047,7 @@ select[multiple].form-group-lg .form-control {
   color: #b94a48;
 }
 .has-feedback label ~ .form-control-feedback {
-  top: 24px;
+  top: 25px;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
@@ -3118,7 +3118,7 @@ select[multiple].form-group-lg .form-control {
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 28px;
+  min-height: 29px;
 }
 .form-horizontal .form-group {
   margin-left: -15px;
@@ -3250,8 +3250,8 @@ fieldset[disabled] .SocialIcon:active {
 .Button,
 .ActionBlock .React {
   color: #ffffff;
-  background-color: #444444;
-  border-color: #444444;
+  background-color: #2c5e8d;
+  border-color: #2c5e8d;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3266,8 +3266,8 @@ fieldset[disabled] .SocialIcon:active {
 .ActionBlock .React:focus,
 .ActionBlock .React:active {
   color: #ffffff;
-  background-color: #2b2b2b;
-  border-color: #252525;
+  background-color: #204466;
+  border-color: #1d3f5e;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3302,11 +3302,11 @@ fieldset[disabled] .Button:hover,
 fieldset[disabled] .Button:focus,
 .Button[disabled]:active,
 fieldset[disabled] .Button:active {
-  background-color: #444444;
-  border-color: #444444;
+  background-color: #2c5e8d;
+  border-color: #2c5e8d;
 }
 .btn-default .badge {
-  color: #444444;
+  color: #2c5e8d;
   background-color: #ffffff;
 }
 .btn-primary,
@@ -3725,7 +3725,7 @@ tbody.collapse.in {
 .dropdown-menu .divider,
 .MenuItems li > hr {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4226,7 +4226,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav .nav-divider {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4253,7 +4253,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #777777;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4299,7 +4299,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #f9f9f9;
   }
 }
 .nav-pills > li {
@@ -4373,7 +4373,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #f9f9f9;
   }
 }
 .tab-content > .tab-pane {
@@ -4392,7 +4392,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 40px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4498,9 +4498,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 10.5px 15px;
+  padding: 10px 15px;
   font-size: 18px;
-  line-height: 19px;
+  line-height: 20px;
   height: 40px;
 }
 .navbar-brand:hover,
@@ -4546,14 +4546,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 5.25px -15px;
+  margin: 5px -15px;
 }
 .navbar-nav > li > a,
 .MeBox .Username,
 .MeBox .FlyoutButton {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 19px;
+  line-height: 20px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4570,7 +4570,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 19px;
+    line-height: 20px;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4588,8 +4588,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a,
   .MeBox .Username,
   .MeBox .FlyoutButton {
-    padding-top: 10.5px;
-    padding-bottom: 10.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .navbar-form {
@@ -4600,8 +4600,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4688,8 +4688,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .navbar-btn.btn-sm {
   margin-top: 5px;
@@ -4700,8 +4700,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 9px;
 }
 .navbar-text {
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -4946,7 +4946,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .breadcrumb,
 .Breadcrumbs {
   padding: 8px 15px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   list-style: none;
   background-color: #f9f9f9;
   border-radius: 4px;
@@ -4971,7 +4971,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .NumberedPager {
   display: inline-block;
   padding-left: 0;
-  margin: 19px 0;
+  margin: 20px 0;
   border-radius: 4px;
 }
 .pagination > li {
@@ -5081,7 +5081,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager,
 .PrevNextPager {
   padding-left: 0;
-  margin: 19px 0;
+  margin: 20px 0;
   list-style: none;
   text-align: center;
 }
@@ -5155,13 +5155,13 @@ a.label:focus {
 .label-default,
 .Tag,
 .Item .Meta .MItem.Category a {
-  background-color: #444444;
+  background-color: #2c5e8d;
 }
 .label-default[href]:hover,
 .label-default[href]:focus,
 .Item .Meta .MItem.Category a:hover,
 .Item .Meta .MItem.Category a:focus {
-  background-color: #2b2b2b;
+  background-color: #204466;
 }
 .label-primary,
 .Note.Closed.SignInOrRegister,
@@ -5260,7 +5260,7 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #f7f7f7;
+  background-color: #f1f1f1;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5272,7 +5272,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #dedede;
+  border-top-color: #d8d8d8;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5299,9 +5299,9 @@ a.badge:focus {
 .PhotoWrapLarge {
   display: block;
   padding: 4px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   line-height: 1.53846153;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5327,7 +5327,7 @@ a.thumbnail.active {
 .DismissMessage,
 .Errors {
   padding: 15px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -5433,8 +5433,8 @@ a.thumbnail.active {
 .progress,
 .PasswordStrength {
   overflow: hidden;
-  height: 19px;
-  margin-bottom: 19px;
+  height: 20px;
+  margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5446,7 +5446,7 @@ a.thumbnail.active {
   width: 0%;
   height: 100%;
   font-size: 12px;
-  line-height: 19px;
+  line-height: 20px;
   color: #ffffff;
   text-align: center;
   background-color: #c41230;
@@ -5586,7 +5586,8 @@ a.thumbnail.active {
 .PanelInfo .Heading,
 .DataList .Foot,
 .DataList .Item,
-.DataList.Activities .CommentForm {
+.DataList.Activities .CommentForm,
+.Leaderboard .PanelInfo li {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -5774,7 +5775,7 @@ a.list-group-item-danger.active:focus {
 .MessageList .Item,
 .CategoryBox,
 .CategoryGroup {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -6054,7 +6055,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 0;
 }
 .panel-group {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .panel-group .panel {
   margin-bottom: 0;
@@ -6947,6 +6948,8 @@ button.token-input-delete-token {
 .SingleEntryMethod + .Buttons:after,
 .MultipleEntryMethods + .Buttons:before,
 .MultipleEntryMethods + .Buttons:after,
+.PhotoGrid:before,
+.PhotoGrid:after,
 .Empty:before,
 .Empty:after,
 .NoResults:before,
@@ -7001,6 +7004,7 @@ button.token-input-delete-token {
 .BeforeCommentHeading:after,
 .SingleEntryMethod + .Buttons:after,
 .MultipleEntryMethods + .Buttons:after,
+.PhotoGrid:after,
 .Empty:after,
 .NoResults:after,
 .container:after,
@@ -8944,7 +8948,7 @@ button.token-input-delete-token {
 .btn-social,
 .SocialIcon.HasText {
   position: relative;
-  padding-left: 47px;
+  padding-left: 48px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -8955,8 +8959,8 @@ button.token-input-delete-token {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 35px;
-  line-height: 37px;
+  width: 36px;
+  line-height: 38px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -8988,13 +8992,13 @@ button.token-input-delete-token {
 .btn-social-icon,
 .SocialIcon:not(.HasText) {
   position: relative;
-  padding-left: 47px;
+  padding-left: 48px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 37px;
-  width: 37px;
+  height: 38px;
+  width: 38px;
   padding: 0;
 }
 .btn-social-icon > :first-child {
@@ -9002,8 +9006,8 @@ button.token-input-delete-token {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 35px;
-  line-height: 37px;
+  width: 36px;
+  line-height: 38px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -10140,7 +10144,7 @@ dl dd:last-child {
   margin-bottom: 0;
 }
 .PageDescription {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .Empty,
 .NoResults {
@@ -10157,11 +10161,11 @@ dl dd:last-child {
 }
 .Message .emoji {
   display: inline;
-  height: 19px;
+  height: 20px;
 }
 h1.H,
 .HomepageTitle {
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 .page-content {
   position: relative;
@@ -10214,8 +10218,8 @@ select::-webkit-input-placeholder {
   min-height: 100px;
 }
 .MultiComplete {
-  height: 37px;
-  min-height: 37px;
+  height: 38px;
+  min-height: 38px;
 }
 form label,
 .MultipleEntryMethods .Methods b {
@@ -10832,13 +10836,13 @@ a.Bookmarked:before {
 .ProfilePhoto,
 .ProfilePhotoMedium,
 .BlockColumn .ProfilePhoto {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 3px;
 }
 .ProfilePhotoSmall {
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
 }
 .ProfilePhotoLarge {
   width: 100%;
@@ -10846,7 +10850,7 @@ a.Bookmarked:before {
 .Box + .Box,
 .GuestBox + .Box,
 .UserBox + .Box {
-  margin-top: 19px;
+  margin-top: 20px;
 }
 .GuestBox > :first-child {
   margin-top: 0;
@@ -10903,7 +10907,7 @@ a.Bookmarked:before {
 .Item .Title a {
   font-size: 14px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 20px;
   color: #777777;
   vertical-align: top;
 }
@@ -10919,7 +10923,7 @@ a.Bookmarked:before {
 .Item .Meta,
 .Conversation .Item .MItem {
   font-size: 12px;
-  line-height: 19px;
+  line-height: 20px;
 }
 .DataList .Item .Meta,
 .DataList .Conversation .Item .MItem,
@@ -10966,7 +10970,7 @@ a.Bookmarked:before {
   padding-left: 5px;
 }
 .Item .ActionBlock {
-  margin-top: 9.5px;
+  margin-top: 10px;
 }
 tr.Item:before,
 tr.Item:after {
@@ -11040,7 +11044,7 @@ tr.Item:after {
   display: none;
   float: left !important;
   float: left;
-  line-height: 37px;
+  line-height: 38px;
 }
 @media (min-width: 768px) {
   .MessageForm .Buttons .Back {
@@ -11066,8 +11070,8 @@ tr.Item:after {
   line-height: 1.53846153;
 }
 .DataList.Condensed .Item .Photo img {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
 }
 .DataList.Condensed .Item .Excerpt {
   float: left !important;
@@ -11079,7 +11083,7 @@ tr.Item:after {
 }
 .FormWrapper + .DataList,
 .ActivityFormWrap + .DataList {
-  margin-top: 19px;
+  margin-top: 20px;
 }
 .DataList-Search .Item h1,
 .DataList-Search .Item h2,
@@ -11123,7 +11127,7 @@ tr.Item:after {
 .DataTable h6 {
   font-size: 14px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 20px;
 }
 .DataTable h1,
 .DataTable h2,
@@ -11204,12 +11208,12 @@ tr.Item:after {
 }
 .MessageList {
   position: relative;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .MessageList .Item {
   position: relative;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   margin-left: 64px;
 }
 .MessageList .Item:hover,
@@ -11252,7 +11256,7 @@ tr.Item:after {
 .PagerWrap,
 .PageControls,
 .BeforeCommentHeading {
-  margin: 19px 0;
+  margin: 20px 0;
 }
 .PagerWrap:empty,
 .PageControls:empty,
@@ -11286,7 +11290,7 @@ tr.Item:after {
   display: none;
 }
 .Foot.Closed {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   margin-left: 64px;
 }
 .token-input-token,
@@ -11321,7 +11325,7 @@ tr.Item:after {
 }
 .token-input-list {
   height: auto;
-  min-height: 37px;
+  min-height: 38px;
   padding-bottom: 4px;
   list-style: none;
   cursor: text;
@@ -11361,7 +11365,7 @@ tr.Item:after {
   display: block;
 }
 .VideoWrap {
-  margin: 0 0 9.5px;
+  margin: 0 0 10px;
 }
 .VideoPlayer:empty,
 .Video.Vimeo:empty {
@@ -11405,11 +11409,11 @@ tr.Item:after {
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 59px;
+  min-height: 60px;
   margin-top: 40px;
 }
 .sticky-footer-body {
-  margin-bottom: 99px;
+  margin-bottom: 100px;
 }
 .sticky-footer-html {
   position: relative;
@@ -11635,10 +11639,10 @@ img.jcrop-preview {
 .TinyProgress {
   position: relative;
   display: inline-block;
-  height: 19px;
-  width: 19px;
+  height: 20px;
+  width: 20px;
   vertical-align: top;
-  line-height: 19px;
+  line-height: 20px;
 }
 .navbar-inverse .badge {
   background-color: #fff;
@@ -11660,13 +11664,13 @@ img.jcrop-preview {
 .ActionBlock .React,
 .ActionBlock .React:hover,
 .ActionBlock .React:focus {
-  background-image: -webkit-linear-gradient(#4c4c4c, #444444 6%, #3c3c3c);
-  background-image: -o-linear-gradient(#4c4c4c, #444444 6%, #3c3c3c);
-  background-image: linear-gradient(#4c4c4c, #444444 6%, #3c3c3c);
+  background-image: -webkit-linear-gradient(#306699, #2c5e8d 6%, #285681);
+  background-image: -o-linear-gradient(#306699, #2c5e8d 6%, #285681);
+  background-image: linear-gradient(#306699, #2c5e8d 6%, #285681);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4c4c4c', endColorstr='#ff3c3c3c', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff306699', endColorstr='#ff285681', GradientType=0);
   filter: none;
-  border: 1px solid #2b2b2b;
+  border: 1px solid #204466;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -11775,6 +11779,63 @@ label,
 .pager .disabled > a {
   border-color: #dddddd;
 }
+.PanelInfo a,
+.PanelInfo .Heading {
+  padding: 5px 10px;
+}
+.PanelInfo a {
+  border-color: #d9d8d7;
+}
+.PanelInfo .Heading {
+  background-image: -webkit-linear-gradient(#aeaeab, #a7a6a3 6%, #a09e9b);
+  background-image: -o-linear-gradient(#aeaeab, #a7a6a3 6%, #a09e9b);
+  background-image: linear-gradient(#aeaeab, #a7a6a3 6%, #a09e9b);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaeaeab', endColorstr='#ffa09e9b', GradientType=0);
+  filter: none;
+  border: 1px solid #8e8d89;
+  border-color: #a7a6a3;
+  color: #f9f9f9;
+}
+body {
+  background-image: -webkit-linear-gradient(top, #dddddd 40px, #ffffff 120px);
+  background-image: -o-linear-gradient(top, #dddddd 40px, #ffffff 120px);
+  background-image: linear-gradient(to bottom, #dddddd 40px, #ffffff 120px);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdddddd', endColorstr='#ffffffff', GradientType=0);
+}
+.DataList .Item.CategoryHeading {
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #a7a6a3;
+  border-color: #a7a6a3;
+  color: #f9f9f9;
+}
+.PhotoGrid a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  float: left;
+}
+.PhotoGrid .ProfilePhotoSmall {
+  width: 100%;
+  height: auto;
+}
+.Leaderboard .PanelInfo li {
+  line-height: 30px;
+  padding: 5px 10px;
+}
+.Leaderboard .PanelInfo a {
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.Leaderboard .PanelInfo a.PhotoWrap {
+  padding: 3px;
+}
 /*.Breadcrumbs {
 	background-color: #fd0;
 	a {
@@ -11796,8 +11857,8 @@ h1.H,
 .PageTitle,
 .PageTitle h1 {
   color: #c41230;
-  line-height: 38px;
-  margin-top: 38px;
+  line-height: 40px;
+  margin-top: 40px;
   border-bottom-color: #c41230;
 }
 .TagCloud {
@@ -11818,4 +11879,4 @@ h1.H,
   width: 100%;
   font-size: 13px;
 }
-/*# sourceMappingURL=./dev/talk/themes/mht/design/style.css.map */
+/*# sourceMappingURL=style.css.map */

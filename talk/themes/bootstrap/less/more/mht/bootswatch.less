@@ -134,9 +134,90 @@ label {
     border-color: @pager-border;
   }
 }
+.PanelInfo {
+  a,
+  .Heading {
+    padding: 5px 10px;
+  }
+  a {
+    border-color: lighten(@brand-accent1, 20%);
+  }
+
+  .Heading {
+    //#gradient > .vertical(@brand-primary, lighten(@brand-primary, 10%), 50%, 90%);
+    //background-color: @brand-accent1;
+    .btn-shadow(@brand-accent1);
+    border-color: @brand-accent1;
+    color: @whiteish;
+  }
+}
 
 // Indicators =================================================================
 
 // Progress bars ==============================================================
 
 // Containers =================================================================
+body {
+  //#gradient > .vertical(#fff, lighten(@brand-accent2, 10%), 50%, 90%);
+  #gradient > .vertical(@gray-lighter, @white, 40px, 120px);
+}
+
+.DataList {
+  .Item {
+    &.CategoryHeading {
+      font-size: @font-size-h4;
+      line-height: @line-height-computed;
+      background-color: @brand-accent1;
+      border-color: @brand-accent1;
+      color: @whiteish;
+
+      .SpFlyoutHandle {
+        //font-size: @font-size-base;
+        //vertical-align: text-top;
+      }
+    }
+  }
+}
+
+// YAGA =======================================================================
+.PhotoGrid {
+  &:extend(.clearfix all);
+
+  a {
+    display:inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    float: left;
+  }
+
+  .ProfilePhotoSmall {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Leaderboard {
+  .PanelInfo {
+    li {
+      &:extend(.list-group-item);
+      line-height: 30px;
+      padding: 5px 10px;
+    }
+
+    a {
+      display: inline-block;
+      position: relative;
+      border:none;
+      padding: 0;
+      margin: 0;
+
+      &.PhotoWrap {
+        padding: 3px;
+      }
+
+      .ProfilePhoto {
+      }
+    }
+  }
+}
