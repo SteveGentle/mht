@@ -108,4 +108,4 @@ $Configuration['Yaga']['LeaderBoard']['Enabled'] = '';
 $Configuration['Yaga']['LeaderBoard']['Limit'] = '';
 $Configuration['Yaga']['BestContent']['PerPage'] = 10;
 
-// Last edited by Steve (127.0.0.1)2015-09-01 06:19:34
+// Last edited by Steve (127.0.0.1)2015-09-02 03:40:13
